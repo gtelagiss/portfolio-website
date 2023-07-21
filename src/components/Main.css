@@ -1,0 +1,83 @@
+/* Main.css */
+
+.main-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  grid-template-rows: 7fr 3fr;
+  padding: 10px; /* Adjust the values as needed */
+}
+
+.contact-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  grid-template-rows: 7fr 3fr; /* Adjust the values as needed */
+  padding: 10px;
+}
+
+.resume-container {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.h1 {
+  font-size: 50px;
+  place-items: center;
+}
+
+.h2 {
+  font-size: 40px;
+  place-items: center;
+}
+
+.h3 {
+  font-size: 30px;
+}
+
+.h4 {
+  font-size: 20px;
+}
+
+.experience-container {
+  display: grid;
+
+  height: 70vh;
+  grid-template-rows: 2fr 1fr 1fr; /* Adjust the values as needed */
+  padding: 20px;
+}
+
+.paragraph-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 35px; /* Adjust the margin as needed */
+}
+
+.experience-image {
+  width: 450px; /* Adjust the width as needed */
+  margin-left: auto;
+  margin-top: 0; /* Adjust the margin as needed */
+}
+
+@media (max-width: 768px) {
+  /* Media query for screen sizes up to 768px (e.g., mobile devices) */
+
+  .experience-container {
+    grid-template-rows: auto 1fr 1fr; /* Adjust the rows to stack content vertically */
+  }
+
+  .paragraph-container {
+    flex-direction: column; /* Stack the elements vertically on mobile */
+  }
+
+  .experience-image {
+    width: 100%; /* Adjust the width to fit the container on mobile */
+    margin-top: 20px; /* Add some margin between paragraphs and images */
+  }
+}
